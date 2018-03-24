@@ -9,10 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class current_location extends Fragment {
+public class home extends Fragment {
 
-    public static current_location newInstance() {
-        current_location fragment = new current_location();
+    public static home newInstance() {
+        home fragment = new home();
 
         return fragment;
     }
@@ -27,7 +27,7 @@ public class current_location extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_current_location, container, false);
+        return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
 }

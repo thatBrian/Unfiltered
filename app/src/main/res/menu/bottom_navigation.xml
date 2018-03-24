@@ -6,9 +6,9 @@
         android:icon="@drawable/map"
         />
     <item
-        android:id="@+id/menu_currentLocation"
-        android:title="@string/current"
-        android:icon="@drawable/location"
+        android:id="@+id/menu_home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_action_name"
         />
 
     <item

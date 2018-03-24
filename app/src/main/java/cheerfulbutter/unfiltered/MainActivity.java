@@ -25,9 +25,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        overridePendingTransition(R.transition.fade_in, R.transition.fade_out);
         //final FrameLayout contentView = (FrameLayout) findViewById(R.id.frame_layout);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setSelectedItemId(R.id.menu_currentLocation);
+        navigation.setSelectedItemId(R.id.menu_home);
         navigation.setOnNavigationItemSelectedListener
                 (new BottomNavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -38,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
                             case R.id.menu_map:
                                 selectedFragment = map.newInstance();
                                 break;
-                            case R.id.menu_currentLocation:
-                                selectedFragment = current_location.newInstance();
+                            case R.id.menu_home:
+                                selectedFragment = home.newInstance();
                                 break;
                             case R.id.menu_additionalInformation:
                                 selectedFragment = addtional_information.newInstance();
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Manually displaying the first fragment - one time only
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout, current_location.newInstance());
+        transaction.replace(R.id.frame_layout, home.newInstance());
         transaction.commit();
 
     }
