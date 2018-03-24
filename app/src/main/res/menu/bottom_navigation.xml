@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/menu_home"
+        android:id="@+id/menu_map"
         android:title="@string/map"
-        android:icon="@drawable/ic_map_white_24dp"
+        android:icon="@drawable/map"
         />
     <item
-        android:id="@+id/menu_search"
+        android:id="@+id/menu_currentLocation"
         android:title="@string/current"
-        android:icon="@drawable/ic_location_on_white_24dp"
+        android:icon="@drawable/location"
         />
 
     <item
-        android:id="@+id/menu_notifications"
+        android:id="@+id/menu_additionalInformation"
         android:title="@string/learnMore"
-        android:icon="@drawable/ic_announcement_white_24dp" />
+        android:icon="@drawable/announcement" />
 </menu>
