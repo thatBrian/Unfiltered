@@ -21,28 +21,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
-//
-//        bottomNavigationView.setOnNavigationItemSelectedListener(
-//            new BottomNavigationView.OnNavigationItemSelectedListener() {
-//                @Override
-//                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//                    switch (item.getItemId()) {
-//                        case R.id.menu_map:
-//                            // TODO
-//                            return true;
-//                        case R.id.menu_currentLocation:
-//                            // TODO
-//                            return true;
-//                        case R.id.menu_additionalInformation:
-//                            // TODO
-//                            return true;
-//                    }
-//                    return false;
-//                }
-//            });
-
-
     }
 
     @Override

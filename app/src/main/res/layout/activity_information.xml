@@ -5,8 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="cheerfulbutter.unfiltered.information">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/maggie_profile"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="HELLO WORLD!!!"/>
+
 </android.support.constraint.ConstraintLayout>
