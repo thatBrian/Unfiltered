@@ -9,12 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
+public class current_location extends Fragment {
 
-public class addtional_information extends Fragment {
-
-
-    public static addtional_information newInstance() {
-        addtional_information fragment = new addtional_information();
+    public static current_location newInstance() {
+        current_location fragment = new current_location();
 
         return fragment;
     }
@@ -22,12 +20,14 @@ public class addtional_information extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_addtional_information, container, false);
+        return inflater.inflate(R.layout.fragment_current_location, container, false);
     }
+
 }

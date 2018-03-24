@@ -1,5 +1,9 @@
 package cheerfulbutter.unfiltered;
 
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -9,19 +13,53 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //final FrameLayout contentView = (FrameLayout) findViewById(R.id.frame_layout);
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setSelectedItemId(R.id.menu_currentLocation);
+        navigation.setOnNavigationItemSelectedListener
+                (new BottomNavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        //FrameLayout contentView = (FrameLayout) findViewById(R.id.frame_layout);
+                        Fragment selectedFragment = null;
+                        switch (item.getItemId()) {
+                            case R.id.menu_map:
+                                selectedFragment = map.newInstance();
+                                break;
+                            case R.id.menu_currentLocation:
+                                selectedFragment = current_location.newInstance();
+                                break;
+                            case R.id.menu_additionalInformation:
+                                selectedFragment = addtional_information.newInstance();
+                                break;
+                        }
+                        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                        transaction.replace(R.id.frame_layout, selectedFragment);
+                        transaction.commit();
+
+                        return true;
+                    }
+                });
+
+        //Manually displaying the first fragment - one time only
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame_layout, current_location.newInstance());
+        transaction.commit();
 
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
