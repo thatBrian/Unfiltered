@@ -25,9 +25,9 @@
                 android:text="Obtain a free water testing kit"
                 android:textSize="20sp"
                 android:textColor="@color/colorPrimaryDark"/>
-            <ImageButton
+            <ImageView
                 android:background="#ffff"
-                android:padding="0sp"
+                android:padding="30sp"
                 android:src="@drawable/arrow"
                 android:layout_width="80sp"
                 android:layout_height="80sp" />
@@ -118,5 +118,34 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#D3D3D3"/>
+        <LinearLayout
+            android:id="@+id/link_5"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80sp">
+            <TextView
+                android:paddingLeft="15sp"
+                android:gravity="center_vertical"
+                android:background="#ffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="80"
+                android:fontFamily="@font/basic"
+                android:text="Our Website"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"/>
+            <ImageButton
+                android:background="#ffff"
+                android:padding="0sp"
+                android:src="@drawable/arrow"
+                android:layout_width="80sp"
+                android:layout_height="80sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3D3D3"/>
+
     </LinearLayout>
 </FrameLayout>

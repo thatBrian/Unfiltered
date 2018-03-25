@@ -35,6 +35,7 @@ public class addtional_information extends Fragment {
         LinearLayout link_2 = (LinearLayout) v.findViewById(R.id.link_2);
         LinearLayout link_3 = (LinearLayout) v.findViewById(R.id.link_3);
         LinearLayout link_4 = (LinearLayout) v.findViewById(R.id.link_4);
+        LinearLayout link_5 = (LinearLayout) v.findViewById(R.id.link_5);
 
         link_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +63,13 @@ public class addtional_information extends Fragment {
             public void onClick(View v) {
                 Intent intent_4 = new Intent("android.intent.action.VIEW", Uri.parse("https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations"));
                 startActivity(intent_4 );
+            }
+        });
+        link_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_5 = new Intent("android.intent.action.VIEW", Uri.parse("http://i6.cims.nyu.edu/~mmw480/"));
+                startActivity(intent_5 );
             }
         });
         return v;
