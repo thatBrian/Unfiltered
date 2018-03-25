@@ -6,8 +6,7 @@
     tools:context="cheerfulbutter.unfiltered.home">
 
     <LinearLayout
-        android:backgroundTint="@color/colorPrimary"
-        android:background="@drawable/water"
+        android:background="@color/colorPrimary"
         android:orientation="vertical"
         android:layout_gravity="center_vertical"
         android:layout_width="match_parent"
@@ -16,11 +15,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/archivo_black"
+            android:fontFamily="archivo_black"
             android:gravity="center_horizontal"
             android:text="5,363 WATER SYSTEMS FAILED TO MEET FEDERAL STANDARDS AFTER TESTING FOR CONTAMINANTS"
-            android:textSize="30sp"
-            android:textColor="#ffff"/>
+            android:textColor="#ffff"
+            android:textSize="30sp" />
         <TextView
             android:textColor="#ffff"
             android:gravity="center_horizontal"

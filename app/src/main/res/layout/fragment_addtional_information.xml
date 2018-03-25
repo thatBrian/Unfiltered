@@ -5,12 +5,119 @@
     android:id="@+id/additional_info_fragment"
     tools:context="cheerfulbutter.unfiltered.addtional_information">
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
+        <LinearLayout
+            android:id="@+id/link_1"
+            android:clickable="true"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+            android:layout_height="80sp">
+            <TextView
+                android:paddingLeft="15sp"
+                android:gravity="center_vertical"
+                android:background="#ffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="80"
+                android:fontFamily="@font/basic"
+                android:text="Free water testing kit link:"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"/>
+            <ImageButton
+                android:background="#ffff"
+                android:padding="0sp"
+                android:src="@drawable/arrow"
+                android:layout_width="80sp"
+                android:layout_height="80sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3D3D3"/>
+        <LinearLayout
+            android:id="@+id/link_2"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80sp">
+            <TextView
+                android:paddingLeft="15sp"
+                android:gravity="center_vertical"
+                android:background="#ffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Contaminants Regulations (includes effects of different contaminants)"
+                android:textSize="20sp"
+                android:layout_weight="80"
+                android:textColor="@color/colorPrimaryDark"/>
+            <ImageButton
+                android:background="#ffff"
+                android:padding="0sp"
+                android:src="@drawable/arrow"
+                android:layout_width="80sp"
+                android:layout_height="80sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3D3D3"/>
+        <LinearLayout
+            android:id="@+id/link_3"
+            android:clickable="true"
+            android:background="#ffff"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80sp">
+            <TextView
+                android:paddingLeft="15sp"
+                android:gravity="center_vertical"
+                android:background="#ffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Lead exposure effects:"
+                android:textSize="20sp"
+                android:layout_weight="80"
+                android:textColor="#2e9990"/>
+            <ImageButton
+                android:background="#ffff"
+                android:padding="0sp"
+                android:src="@drawable/arrow"
+                android:layout_width="80sp"
+                android:layout_height="80sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3D3D3"/>
+        <LinearLayout
+            android:id="@+id/link_4"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80sp">
+            <TextView
+                android:paddingLeft="15sp"
+                android:gravity="center_vertical"
+                android:background="#ffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="National Primary Drinking Water Regulations | US EPA"
+                android:textSize="20sp"
+                android:layout_weight="80"
+                android:textColor="#2e9990"/>
+            <ImageButton
+                android:background="#ffff"
+                android:padding="0sp"
+                android:src="@drawable/arrow"
+                android:layout_width="80sp"
+                android:layout_height="80sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3D3D3"/>
     </LinearLayout>
 
 
