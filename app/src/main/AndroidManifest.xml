@@ -37,11 +37,6 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".InfoWebView"
-            android:screenOrientation="portrait"
-            android:theme="@style/NoActionBar"
-            >
-        </activity>
     </application>
 
 </manifest>

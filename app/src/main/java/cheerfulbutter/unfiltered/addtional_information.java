@@ -39,28 +39,28 @@ public class addtional_information extends Fragment {
         link_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_1 = new Intent(getActivity(),InfoWebView.class);
+                Intent intent_1 = new Intent("android.intent.action.VIEW", Uri.parse("https://www1.nyc.gov/apps/311universalintake/form.htm?serviceName=DEP+Lead+Kit"));
                 startActivity(intent_1 );
             }
         });
         link_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_2 = new Intent(getActivity(),InfoWebView.class);
+                Intent intent_2 = new Intent("android.intent.action.VIEW", Uri.parse("https://waterservices.usgs.gov/"));
                 startActivity(intent_2 );
             }
         });
         link_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_3 = new Intent(getActivity(),InfoWebView.class);
+                Intent intent_3 = new Intent("android.intent.action.VIEW", Uri.parse("https://www.atsdr.cdc.gov/csem/csem.asp?csem=34&po=10"));
                 startActivity(intent_3 );
             }
         });
         link_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_4 = new Intent(getActivity(),InfoWebView.class);
+                Intent intent_4 = new Intent("android.intent.action.VIEW", Uri.parse("https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations"));
                 startActivity(intent_4 );
             }
         });

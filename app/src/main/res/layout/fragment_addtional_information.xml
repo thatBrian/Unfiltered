@@ -22,7 +22,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="80"
                 android:fontFamily="@font/basic"
-                android:text="Free water testing kit link:"
+                android:text="Obtain a free water testing kit"
                 android:textSize="20sp"
                 android:textColor="@color/colorPrimaryDark"/>
             <ImageButton
@@ -48,7 +48,7 @@
                 android:background="#ffff"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Contaminants Regulations (includes effects of different contaminants)"
+                android:text="USGS Water Services"
                 android:textSize="20sp"
                 android:layout_weight="80"
                 android:textColor="@color/colorPrimaryDark"/>
@@ -76,7 +76,7 @@
                 android:background="#ffff"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Lead exposure effects:"
+                android:text="Learn about the effects of Lead exposure"
                 android:textSize="20sp"
                 android:layout_weight="80"
                 android:textColor="#2e9990"/>
@@ -119,9 +119,4 @@
             android:layout_height="1dp"
             android:background="#D3D3D3"/>
     </LinearLayout>
-
-
-
-
-
 </FrameLayout>
