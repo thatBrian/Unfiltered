@@ -23,47 +23,57 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        overridePendingTransition(R.transition.fade_in, R.transition.fade_out);
-        //final FrameLayout contentView = (FrameLayout) findViewById(R.id.frame_layout);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setSelectedItemId(R.id.menu_home);
-        navigation.setOnNavigationItemSelectedListener
-                (new BottomNavigationView.OnNavigationItemSelectedListener() {
-                    @Override
-                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                        //FrameLayout contentView = (FrameLayout) findViewById(R.id.frame_layout);
-                        Fragment selectedFragment = null;
-                        switch (item.getItemId()) {
-                            case R.id.menu_map:
-                                selectedFragment = map.newInstance();
-                                break;
-                            case R.id.menu_home:
-                                selectedFragment = home.newInstance();
-                                break;
-                            case R.id.menu_additionalInformation:
-                                selectedFragment = addtional_information.newInstance();
-                                break;
-                        }
-                        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                        transaction.replace(R.id.frame_layout, selectedFragment);
-                        transaction.commit();
+        try {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            overridePendingTransition(R.transition.fade_in, R.transition.fade_out);
+            //final FrameLayout contentView = (FrameLayout) findViewById(R.id.frame_layout);
+            BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+            navigation.setSelectedItemId(R.id.menu_home);
+            navigation.setOnNavigationItemSelectedListener
+                    (new BottomNavigationView.OnNavigationItemSelectedListener() {
+                        @Override
+                        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                            //FrameLayout contentView = (FrameLayout) findViewById(R.id.frame_layout);
+                            Fragment selectedFragment = null;
+                            switch (item.getItemId()) {
+                                case R.id.menu_map:
+                                    selectedFragment = map.newInstance();
+                                    break;
+                                case R.id.menu_home:
+                                    selectedFragment = home.newInstance();
+                                    break;
+                                case R.id.menu_additionalInformation:
+                                    selectedFragment = addtional_information.newInstance();
+                                    break;
+                            }
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.replace(R.id.frame_layout, selectedFragment);
+                            transaction.commit();
 
-                        return true;
-                    }
-                });
-        //Manually displaying the first fragment - one time only
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout, home.newInstance());
-        transaction.commit();
+                            return true;
+                        }
+                    });
+
+            //Manually displaying the first fragment - one time only
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.frame_layout, home.newInstance());
+            transaction.commit();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
     }
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.action_bar_button, menu);
+
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will

@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 
 
 public class home extends Fragment {
-    ViewPager viewPager;
+//    ViewPager viewPager;
 
     public static home newInstance() {
         home fragment = new home();
@@ -31,7 +31,7 @@ public class home extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_home, null);
+        View view=inflater.inflate(R.layout.fragment_map, container, false);
 
         return view;
     }
