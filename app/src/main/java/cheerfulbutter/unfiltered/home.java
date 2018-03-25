@@ -14,7 +14,6 @@ import android.view.ViewGroup;
 
 
 public class home extends Fragment {
-//    ViewPager viewPager;
 
     public static home newInstance() {
         home fragment = new home();
@@ -31,43 +30,7 @@ public class home extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_map, container, false);
-
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
         return view;
     }
-//    public static class MyPagerAdapter extends FragmentPagerAdapter {
-//        private static int NUM_ITEMS = 3;
-//
-//        public MyPagerAdapter(FragmentManager fragmentManager) {
-//            super(fragmentManager);
-//        }
-//
-//        // Returns total number of pages
-//        @Override
-//        public int getCount() {
-//            return NUM_ITEMS;
-//        }
-//
-//        // Returns the fragment to display for that page
-//        @Override
-//        public Fragment getItem(int position) {
-//            switch (position) {
-//                case 0: // Fragment # 0 - This will show FirstFragment
-//                    return HomeChildFragmentOne.newInstance(0, "Page # 1");
-//                case 1: // Fragment # 0 - This will show FirstFragment different title
-//                    return HomeChildFragmentTwo.newInstance(1, "Page # 2");
-//                case 2: // Fragment # 1 - This will show SecondFragment
-//                    return HomeChildFragmentThree.newInstance(2, "Page # 3");
-//                default:
-//                    return null;
-//            }
-//        }
-//
-//        // Returns the page title for the top indicator
-//        @Override
-//        public CharSequence getPageTitle(int position) {
-//            return "Page " + position;
-//        }
-//
-//    }
 }

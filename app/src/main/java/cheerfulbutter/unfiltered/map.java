@@ -30,15 +30,15 @@ public class map extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.fragment_map, container, false);
-        mWebView = (WebView) v.findViewById(R.id.webview);
-        mWebView.loadUrl("file:///android_asset/geoLocation.html");
-
-        // Enable Javascript
-        WebSettings webSettings = mWebView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-
-        // Force links and redirects to open in the WebView instead of in a browser
-        mWebView.setWebViewClient(new WebViewClient());
+//        mWebView = (WebView) v.findViewById(R.id.webview);
+//        mWebView.loadUrl("file:///android_asset/geoLocation.html");
+//
+//        // Enable Javascript
+//        WebSettings webSettings = mWebView.getSettings();
+//        webSettings.setJavaScriptEnabled(true);
+//
+//        // Force links and redirects to open in the WebView instead of in a browser
+//        mWebView.setWebViewClient(new WebViewClient());
 
         return v;
     }
