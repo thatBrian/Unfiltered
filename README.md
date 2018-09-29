@@ -3,6 +3,7 @@ Unfiltered
 NOTE:
 -----
 This project has been offically archived. This project will be remade using React Native.
+(Newest version build on React with Expo will be updated in a new Repository by end of 2018).
 
 Inspiration
 -----------
